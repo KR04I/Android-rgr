@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/insertBtn"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/insertText"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sortBtn"
+        android:layout_width="94dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/sortText"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/insertBtn" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/listView"
+        android:layout_width="349dp"
+        android:layout_height="256dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/insertByIdBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars = "vertical"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <Button
+        android:id="@+id/insertByIdBtn"
+        android:layout_width="105dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/insertById"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteByIdBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/addEditText"
+        android:layout_width="61dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="136dp"
+        android:layout_weight="1"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/sortBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/deleteByIdBtn"
+        android:layout_width="105dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/deleteById"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/sortBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/deleteEditText"
+        android:layout_width="61dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="80dp"
+        android:layout_weight="1"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/sortBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/findByIdBtn"
+        android:layout_width="97dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/findById"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/sortBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/findEditText"
+        android:layout_width="61dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="1"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/sortBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="105dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/saveText"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteByIdBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/loadBtn"
+        android:layout_width="105dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/loadText"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/sortBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/deleteByIdBtn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/clearText"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sortBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

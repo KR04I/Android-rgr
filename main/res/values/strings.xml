@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Фокин</string>
+    <string name="saveText">Сохранить</string>
+    <string name="loadText">Загрузить</string>
+    <string name="sortText">Сортировать</string>
+    <string name="clearText">Очистить</string>
+    <string name="insertText">Вставить</string>
+    <string name="deleteTExt">Удалить</string>
+    <string name="insertById">Вставить по id</string>
+    <string name="deleteById">Удалить по ID</string>
+    <string name="findById">Найти по Id</string>
+</resources>
